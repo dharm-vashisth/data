@@ -31,3 +31,11 @@ def clean_value(val):
     elif isinstance(val, (dict, list)):
         return str(val)
     return val
+
+
+def get_monthly_spending(transformed_df):
+    return transformed_df[transformed_df['Type'].str.strip() != 'Debit'].groupby('Month')['Amount'].sum().to_frame()
+
+
+def get_data_by_category(transformed_df):
+    return transformed_df.groupby('Category')['Amount'].sum().to_frame()

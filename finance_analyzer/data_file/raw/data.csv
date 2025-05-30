@@ -1,3 +1,7 @@
 Date,Description,Amount,Type
-2024-10-01, Starbucks, -5.50, Debit
+2024-10-01, Starbucks, 15.50, Debit
+2024-10-01, Uber, 1500.50, Debit
 2024-10-01, Salary, 2500.00, Credit
+2024-11-01, Salary, 2550.00, Credit
+2024-11-01, Starbucks, 25.50, Debit
+2024-11-01, Uber, 1115.50, Debit
