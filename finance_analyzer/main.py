@@ -21,8 +21,17 @@ display_df(transformed_df, style='fancy_grid')
 # Loading into Database
 conn = get_connection(name=DB_NAME)
 print(f"Connection is established to the database {DB_NAME}...")
-transformed_df.to_sql('transactions', conn, if_exists='append', index=False)
+
+# we are replacing the table everytime we're executing the program
+transformed_df.to_sql('transactions', conn, if_exists='replace', index=False)
 print_bold_message(f"3.LOAD: Data is stored in the database {DB_NAME}")
+cursor = conn.cursor()
+result = cursor.execute("select * from transactions")
+
+# fetching the data from database finance.
+print_bold_message("Transaction Table Data")
+for row in result.fetchall():
+    print(row)
 conn.close()
 print("Connection Terminated.\n")
 
