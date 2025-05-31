@@ -1,4 +1,6 @@
 Date,Description,Amount,Type
+2025-05-31, Food, 50, Debit
+2025-05-31, Fruits, 520, Debit
 2024-10-01, Starbucks, 15.50, Debit
 2024-10-01, Uber, 1500.50, Debit
 2024-10-01, Salary, 2500.00, Credit

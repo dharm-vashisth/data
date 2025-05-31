@@ -7,6 +7,10 @@ def categorize(description):
         return 'Coffee'
     elif 'salary' in description.lower():
         return 'Income'
+    elif 'fruit' in description.lower():
+        return 'Food'
+    elif 'food' in description.lower():
+        return 'Food'
     elif 'uber' in description.lower():
         return 'Transport'
     else:
