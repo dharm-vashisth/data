@@ -8,7 +8,7 @@ from finance_analyzer.utils import display_df, project_headline, print_bold_mess
 
 project_headline()
 
-# Extracting
+# Ingestion of data from the raw sources.
 df = pd.read_csv("./data_file/raw/data.csv")
 print("1.EXTRACT: Original Dataframe")
 display_df(df)
