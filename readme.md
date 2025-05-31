@@ -2,7 +2,7 @@
 
 Welcome to the **Data Engineering Projects Hub** — a curated collection of mini-projects that explore essential data
 engineering concepts, tools, and workflows. Each project is designed to be standalone and focused, making it easy to
-dive in, learn, and build practical skills.
+dive in, learn, and build practical skills. Mostly we will be working with dummy data.
 
 ---
 
