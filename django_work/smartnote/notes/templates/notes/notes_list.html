@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes</title>
+</head>
+<body>
+<h1>These are the notes available:</h1>
+<ol>
+    {% for note in notes %}
+    <hr />
+    <li><p>
+        Title: {{ note.title }}
+        <br />
+        Text: {{ note.text }}
+        <br />
+        Likes: {{ note.likes }}
+        <br />
+        Creation Date: {{ note.created }}
+        </p>
+    </li>
+    {% endfor %}
+</ol>
+</body>
+</html>
