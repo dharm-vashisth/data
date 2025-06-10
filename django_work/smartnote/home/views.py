@@ -1,12 +1,14 @@
 from datetime import datetime
 
-from django.shortcuts import render
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import TemplateView
 
-# Create your views here.
-def home(request):
-    return render(request, 'home/index.html',{'date_': datetime.today()})  # passing the parameter
 
-@login_required(login_url='/admin')
-def login(request):
-    return render(request, 'home/authorized_page.html',{})
+class Home(TemplateView):
+    template_name = 'home/index.html'
+    extra_context = {'date_': datetime.today()}
+
+
+class Login(LoginRequiredMixin, TemplateView):
+    template_name = 'home/authorized_page.html'
+    login_url = '/admin'
