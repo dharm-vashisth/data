@@ -6,20 +6,12 @@
     <title>Notes</title>
 </head>
 <body>
-<h1>These are the notes available:</h1>
+<hr />
+<h1>Below are the notes available:</h1>
+<hr />
 <ol>
     {% for note in notes %}
-    <hr />
-    <li><p>
-        Title: {{ note.title }}
-        <br />
-        Text: {{ note.text }}
-        <br />
-        Likes: {{ note.likes }}
-        <br />
-        Creation Date: {{ note.created }}
-        </p>
-    </li>
+    <li><a href = 'notes/{{ note.id }}'> {{ note.title }} </a></li>
     {% endfor %}
 </ol>
 </body>
