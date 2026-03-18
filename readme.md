@@ -32,7 +32,7 @@ This repository will include projects in areas such as:
 👨‍💻 **Dharm Vashisth**  
 🧠  _Data Engineer_
 
-📧 [Mail](mailto:dharmvashisth5@gmail.com)
+📧 [Mail](mailto:data.dharm.2021@gmail.com)
 🔗 [Linked In](https://www.linkedin.com/in/dharm-vashisth/)
 ___
 ### 🙌 Acknowledgement
